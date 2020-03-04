@@ -1,0 +1,15 @@
+name: commit-status
+
+on: [pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ouzi-dev/commit-status-updater@v1.0.2
+      with: 
+        status: success
+    
