@@ -1,7 +1,7 @@
 # Changelog
 ---------
 
-### 5.1.2 (January 13, 2019)
+### 5.1.2 (January 13, 2020)
 - Added Login by Snapchat (thanks to @nicholasgonzalezsc)
 - Migrate the Foursquare API example to use Axios calls instead of the npm library.
 - Fixed minor visual issue in the web scraping example.
@@ -15,7 +15,7 @@
 - Upgraded to Fontawesome to the latest version (thanks in part to @gesa)
 - Upgraded eslint to v5.
 - Updated dependencies
-- Updated copyright year to include 2019
+- Updated copyright year to include 2020
 - Minor code formatting improvements
 - Replaced mLab instructions with MongoDB Atlas instructions (thanks to @mgautam98)
 - Fixed issues in the readme (thanks to @nero-adaware , @empurium, @aschwtzr)

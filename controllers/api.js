@@ -36,8 +36,8 @@ exports.getFoursquare = async (req, res, next) => {
   let userCheckins;
   axios.all([
     axios.get(`https://api.foursquare.com/v2/venues/trending?ll=40.7222756,-74.0022724&limit=50&oauth_token=${token.accessToken}&v=20140806`),
-    axios.get(`https://api.foursquare.com/v2/venues/49da74aef964a5208b5e1fe3?oauth_token=${token.accessToken}&v=20190113`),
-    axios.get(`https://api.foursquare.com/v2/users/self/checkins?oauth_token=${token.accessToken}&v=20190113`)
+    axios.get(`https://api.foursquare.com/v2/venues/49da74aef964a5208b5e1fe3?oauth_token=${token.accessToken}&v=20200113`),
+    axios.get(`https://api.foursquare.com/v2/users/self/checkins?oauth_token=${token.accessToken}&v=20200113`)
   ])
     .then(axios.spread((trendingVenuesRes, venueDetailRes, userCheckinsRes) => {
       trendingVenues = trendingVenuesRes.data.response;
