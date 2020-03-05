@@ -1,3 +1,5 @@
+# Create a success commit status so that the auto-merge PR skill check is met
+
 name: commit-status
 
 on: [pull_request]
