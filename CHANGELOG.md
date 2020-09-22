@@ -10,3 +10,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 
 -   Update app.js. [#116](https://github.com/fauxryan/chambray/issues/116)
+-   Update app.js. [#117](https://github.com/fauxryan/chambray/issues/117)
