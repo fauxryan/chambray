@@ -14,13 +14,15 @@
     "postinstall": "npm rebuild node-sass",
     "start": "node app.js",
     "test": "nyc mocha --timeout=10000 --exit",
-    "lint": "eslint \"**/*.js\""
+    "lint": "eslint \"**/*.js\"",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.7.2",
     "@ladjs/bootstrap-social": "^7.0.2",
     "@octokit/rest": "^16.16.0",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "bcrypt-nodejs": "^0.0.3",
     "body-parser": "^1.18.3",
     "bootstrap": "^4.3.1",
@@ -28,27 +30,27 @@
     "cheerio": "^1.0.0-rc.2",
     "clockwork": "^0.1.4",
     "compression": "^1.7.3",
-    "connect-mongo": "^2.0.3",
+    "connect-mongo": "^3.0.0",
     "dotenv": "^6.2.0",
     "errorhandler": "^1.5.0",
     "express": "^4.16.4",
     "express-flash": "^0.0.2",
     "express-handlebars": "^3.0.2",
     "express-session": "^1.15.6",
-    "express-status-monitor": "^1.2.3",
-    "express-validator": "^5.3.1",
+    "express-status-monitor": "^1.2.9",
+    "express-validator": "^6.0.0",
     "fbgraph": "^1.4.4",
     "instagram-node": "^0.5.8",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "lastfm": "^0.9.3",
     "lob": "^6.0.5",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.20",
     "lusca": "^1.6.1",
-    "mongoose": "^5.4.15",
+    "mongoose": "^5.7.5",
     "morgan": "^1.9.1",
     "multer": "^1.4.1",
     "node-linkedin": "^0.5.6",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "node-sass-middleware": "^0.11.0",
     "nodemailer": "^5.1.1",
     "passport": "^0.4.0",
@@ -70,7 +72,8 @@
     "tumblr.js": "^2.0.0",
     "twilio": "^3.28.1",
     "twit": "^2.2.11",
-    "validator": "^10.11.0"
+    "validator": "^10.11.0",
+    "snyk": "^1.413.3"
   },
   "devDependencies": {
     "chai": "^4.2.0",
@@ -91,5 +94,6 @@
   "homepage": "https://github.com/fauxryan/chambray#readme",
   "bugs": {
     "url": "https://github.com/fauxryan/chambray/issues"
-  }
+  },
+  "snyk": true
 }
