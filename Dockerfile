@@ -1,4 +1,4 @@
-FROM node:8-slim
+FROM node:16.1-slim
 
 WORKDIR /starter
 ENV NODE_ENV development
